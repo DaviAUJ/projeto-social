@@ -1,0 +1,95 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100vh;
+
+    background-color: #8E7E63;
+    background-image: url(../imagens/fundo-madeira.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+main {
+    height: 100vh;
+
+    position: relative;
+}
+
+#buttonsSection {
+    width: 70px;
+    height: fit-content;
+
+    float: right;
+}
+
+.buttons {
+    width: 50px;
+    height: 50px;
+    margin: 20px 10px;
+}
+
+a { 
+    display: block;
+    
+    width: 0px;
+    height: 0px;
+}
+
+#buttonsSection img {
+    box-shadow: 2px 2px 6px 2px rgba(0, 0, 0, 0.418);
+}
+
+#buttonsSection img:hover {
+    transform: translate(-5px, -5px);
+    border: 2px solid whitesmoke;
+    box-shadow: 7px 7px 10px 5px rgba(0, 0, 0, 0.418);
+
+    transition-duration: 180ms;
+    transition-timing-function: ease-in;
+}
+
+#buttonsSection img:active {
+    transform: translate(-5px, -5px) scale(.9, .9);
+
+    transition-duration: 50ms;
+}
+
+img {
+    width: 50px;
+    height: 50px;
+
+    border-radius: 50%;
+}
+
+#iphone {
+    width: 311px;
+    height: 627px;
+
+    background-color: transparent;
+    background-image: url("../imagens/frame-iphone.png");
+    background-position: center;
+    background-repeat: no-repeat;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+iframe {
+    display: block;
+    position: relative;
+    top: 80px;
+    left: 22px;
+    
+
+    width: 267px;
+    height: 471px;
+}
